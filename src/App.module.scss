@@ -1,0 +1,66 @@
+.app {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 2px;
+  div:first-child {
+    grid-row: 1/4;
+    grid-column: 1/3;
+  }
+}
+
+.previewPost {
+  box-sizing: border-box;
+  padding: 10px 30px;
+  line-height: 26px;
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+  }
+  height: 90vh;
+  white-space: pre-wrap;
+  color: black;
+  background-color: rgb(180, 241, 206);
+  border-radius: 5px;
+  border: 3px solid rgb(1, 63, 28);
+}
+
+.post {
+  box-sizing: border-box;
+  border: 3px solid rgb(49, 3, 77);
+  border-radius: 5px;
+  height: 30vh;
+  white-space: pre-wrap;
+  color: rgb(23, 23, 109);
+  background-color: rgb(214, 214, 253);
+  overflow: scroll;
+  overflow-x: hidden;
+  cursor: pointer;
+  h4 {
+    margin: 5px;
+    border-bottom: 2px solid rgb(27, 11, 100);
+    padding-bottom: 4px;
+  }
+  p {
+    margin: 5px;
+  }
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #9f9ffa;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #00c6fb, #005bea);
+  }
+}
+
+.active {
+  background-color: rgb(178, 248, 164);
+}

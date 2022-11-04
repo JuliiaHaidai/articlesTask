@@ -1,0 +1,15 @@
+.pagination {
+  text-align: center;
+  padding: 15px;
+  button {
+    border: none;
+    background-color: #fff;
+    font-size: 18px;
+    width: 50px;
+    cursor: pointer;
+  }
+  .activeButton {
+    border: 2px solid rgb(23, 46, 179);
+    border-radius: 3px;
+  }
+}
